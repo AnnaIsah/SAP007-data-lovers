@@ -6,7 +6,7 @@
         <title>Universo Ghibli</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="data" href="ghibli.js" />
-        <link rel="home" href="home.html">
+        <link rel="home" href="home.html"/>
     </head>
     <body>
         <header>
@@ -20,14 +20,13 @@
             </nav>
         </header>
         <section>
-            <h2 class="film">Filmes</h2>
+            <h2 class="categorias" >Filmes </h2>
             <main class="main-page-data">
-            
                 <section >
                     <form id="form">
                         <input class="select ipt-search" type="text" id="ipt-search" placeholder="&#128269">
                         <select class="select" type= "text">
-                            <option class="lista" value="" disabled selected id="#">Diretores</option>
+                            <option class="lista" value="" disabled selected id="director">Diretores</option>
                             <option class="lista" type="button" id="#">Hayo Miyazaki</option>
                             <option class="lista" type="button" id="#">Yoshifumi Kondo</option>
                             <option class="lista" type="button" id="#">Hiroyuki Morita</option>
@@ -35,9 +34,8 @@
                             <option class="lista" type="button" id="#">Hiromasa Yonebayashi</option>
                             <option class="lista" type="button" id="#">Isao Takahata</option>
                         </select>
-                                     
                         <select class="select" type="text">
-                            <option class="#"  value="" disabled selected id="#">Produtores</option>
+                            <option class="#"  value="" disabled selected id="productor">Produtores</option>
                             <option class="#" type="button" id="#">Hayo Miyazaki</option>
                             <option class="#" type="button" id="#">Isao Takahata</option>
                             <option class="#" type="button" id="#">Toru Hara</option>
@@ -45,32 +43,27 @@
                             <option class="#" type="button" id="#">Yoshiaki Nishimura</option>
                             <option class="#" type="button" id="#">Hiromasa Yonebayashi</option>
                         </select>
-                        
+                        <select class="select" type="text">
+                            <option class="#"  value="" disabled selected id="#">Ordenar</option>
+                            <option class="#" type="button" id="#">A > Z</option>
+                            <option class="#" type="button" id="#">Z > A</option>
+                        </select>
                     </form>
                 </section>    
-                <!--<nav class="dropdown">
-                    <button class="dropbtn" type="button">Personagens</button>
-                    <div class="dropdown-content">
-                        <a href="#" class="A-Z" id="name">A-Z</a>
-                         <a href="#" class="Z-A" id="name">Z-A</a>
-                    </div>
-                </nav> 
-               
-                <button class="btn-search" type="reset" id="btn-reset">Limpar</button> -->
+                <button class="btn-search" type="reset" id="btn-reset">Limpar</button>
             </main>
-            <figure class="img-cards">
-                <img>
-            </figure>
-            <p div="resposta"></p>
+       </section>
+       <section>
+           <div id="card" class="cardSection">
+
+           </div>
        </section>
         <footer class="footer">
             <h4>Conheça as Devs
                 <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
                 <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
             </h4>
-
         </footer>
         <script src="main.js" type="module"></script>
     </body>
-
 </html>
