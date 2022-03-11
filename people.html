@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Ghibli</title>
+    <link rel="stylesheet" href="people.css" />
+    <link rel="home" href="home.html" />
+    <link rel="index" href="index.html" />
+    <link rel="news" href="news.html" />
+    <link rel="data" href="ghibli.js" />
+</head>
+
+<body>
+    <header>
+        <section class="menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+            <ul class="menu-box">
+                <li><a class="menu-item" href="home.html">Home</a></li>
+                <li><a class="menu-item" href="index.html">Filmes</a></li>
+                <li><a class="menu-item" href="news.html">News</a></li>
+            </ul>
+        </section>
+        <h1 class="tittle-header-page-people">Universo Ghibli</h1>
+        <img class="img-logo" src="./img/Logo.jpg" alt="logo-studio-ghibli">
+    </header>
+
+    <section class="section-search-people">
+        <form id="form">
+            <select class="select" type="text" id="filmes">
+                    <option value="" disabled selected id="film">Filmes</option>
+                    <option type="button">Castle in the Sky</option>
+                    <option type="button">My Neighbor Totoro</option>
+                    <option type="button">Kiki's Delivery Service</option>
+                    <option type="button">Grave of the Fireflies</option>
+                    <option type="button">Only Yesterday</option>
+                    <option type="button">Porco Rosso</option>
+                    <option type="button">Pom Poko</option>
+                    <option type="button">Whisper of the Heart</option>
+                    <option type="button">Princess Mononoke</option>
+                    <option type="button">My Neighbors the Yamadas</option>
+                    <option type="button">Spirited Away</option>
+                    <option type="button">The Cat Returns</option>
+                    <option type="button">Howl's Moving Castle</option>
+                    <option type="button">Tales from Earthsea</option>
+                    <option type="button">Ponyo on the Cliff by the Sea</option>
+                    <option type="button">The Secret World of Arrietty</option>
+                    <option type="button">From Up on Poppy Hill</option>
+                    <option type="button">The Wind Rises</option>
+                    <option type="button">The Tale of the Princess Kaguya</option>
+                    <option type="button">When Marnie Was There</option>                   
+            </select>
+            <select class="select" type="text" id="gender">
+                    <option value="" disabled selected>Personagens</option>
+                    <option type="button">Female</option>
+                    <option type="button">Male</option>                    
+            </select>
+            <button class="btn-reset" id="btn-reset">Limpar</button>
+        </form>
+    </section>
+    <main>
+        <section id="card" class="card-section"></section>
+    </main>
+    <footer>
+        <h4>Conheça as Devs
+            <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
+            <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
+        </h4>
+    </footer>
+    <script src="people.js" type="module"></script>
+</body>
+
+</html>
