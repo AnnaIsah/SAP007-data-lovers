@@ -1,10 +1,8 @@
 import dataGhibli from "./data/ghibli/ghibli.js"
 import { filterDataByDirector, filterDataByProducer, sortDataFilms } from "./data.js"
 
-//PARA CHAMAR A ARRAY
 const films = dataGhibli.films;
 
-//PARA IMPRIMIR NA TELA O POSTER COM O TÍTULO DO FILME
 function cardSection(items) {
     const card = document.getElementById("card")
     card.innerHTML = " "
@@ -42,27 +40,30 @@ function cardSection(items) {
 }
 cardSection(films);
 
-//PARA PEGAR O VALOR DO INPUT DO SELETOR
-document.addEventListener("change", () => {
-    const optionsDirector = document.getElementById("director")
-    const directorIndex = optionsDirector.selectedIndex;
-    const directorSelected = optionsDirector[directorIndex].text;
+const director = document.getElementById("director")
+director.addEventListener("change", () => {    
+    const directorIndex = director.selectedIndex;
+    const directorSelected = director[directorIndex].text;
     const directorFiltered = filterDataByDirector(films, directorSelected);
     cardSection(directorFiltered)
+    setTimeout(()=> director.selectedIndex=0,1000);
 });
 
-document.addEventListener("change", () => {
-    const optionsProducer = document.getElementById("producer")
-    const producerIndex = optionsProducer.selectedIndex;
-    const producerSelected = optionsProducer[producerIndex].text;
+
+const producer = document.getElementById("producer")
+producer.addEventListener("change", () => {
+    const producerIndex = producer.selectedIndex;
+    const producerSelected = producer[producerIndex].text;
     const producerFiltered = filterDataByProducer(films, producerSelected);
     cardSection(producerFiltered)
+    setTimeout(()=> producer.selectedIndex=0,1000);
 });
 
-document.addEventListener("change", () => {
-    const optionsOrder = document.getElementById("order")
-    const orderIndex = optionsOrder.selectedIndex;
-    const orderSelected = optionsOrder[orderIndex].text;
+const order = document.getElementById("order")
+order.addEventListener("change", () => {    
+    const orderIndex = order.selectedIndex;
+    const orderSelected = order[orderIndex].text;
     const orderFiltered = sortDataFilms(films, orderSelected);
     cardSection(orderFiltered)
+    
 });
